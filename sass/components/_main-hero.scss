@@ -1,0 +1,162 @@
+/* -------Hero Section------ */
+
+@media screen and (max-width: 767px) {
+  .hero {
+    margin: 0 auto;
+    width: 100%;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/bg-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    &__cta {
+      max-width: 360px;
+      margin: 0 auto 30px auto;
+      font-family: inherit;
+      font-weight: 900;
+      font-size: 26px;
+      line-height: calc(42 / 26);
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--bgrnd-color);
+      text-align: center;
+    }
+
+    &__btn {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: calc(30 / 16);
+      background-color: var(--btn-color);
+      color: var(--bgrnd-color);
+      border-radius: 4px;
+      letter-spacing: 0.06em;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      transition-property: background-color;
+      transition-duration: var(--transition-dir);
+      transition-timing-function: var(--transition-time-func);
+      transition-delay: 0s;
+      padding: 10px 19px 10px 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border: none;
+    }
+    &__btn:hover,
+    &__btn:focus {
+      background-color: var(--btn-active-color);
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .hero {
+    margin: 0 auto;
+    width: 100%;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/bg-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    &__cta {
+      width: 360px;
+      margin: 0 auto 30px auto;
+      font-family: inherit;
+      font-weight: 900;
+      font-size: 26px;
+      line-height: calc(42 / 26);
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--bgrnd-color);
+      text-align: center;
+    }
+
+    &__btn {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: calc(30 / 16);
+      background-color: var(--btn-color);
+      color: var(--bgrnd-color);
+      border-radius: 4px;
+      letter-spacing: 0.06em;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      transition-property: background-color;
+      transition-duration: var(--transition-dir);
+      transition-timing-function: var(--transition-time-func);
+      transition-delay: 0s;
+      padding: 10px 19px 10px 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border: none;
+    }
+    &__btn:hover,
+    &__btn:focus {
+      background-color: var(--btn-active-color);
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .hero {
+    margin: 0 auto;
+    max-width: 1600px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/bg-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    &__cta {
+      width: 696px;
+      margin: 0 auto 30px auto;
+      font-family: inherit;
+      font-weight: 900;
+      font-size: 44px;
+      line-height: calc(60 / 44);
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--bgrnd-color);
+      text-align: center;
+    }
+    &__btn {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: calc(30 / 16);
+      background-color: var(--btn-color);
+      color: var(--bgrnd-color);
+      border-radius: 4px;
+      letter-spacing: 0.06em;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      transition-property: background-color;
+      transition-duration: var(--transition-dir);
+      transition-timing-function: var(--transition-time-func);
+      transition-delay: 0s;
+      padding: 10px 19px 10px 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border: none;
+    }
+    &__btn:hover,
+    &__btn:focus {
+      background-color: var(--btn-active-color);
+    }
+  }
+}

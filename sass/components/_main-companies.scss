@@ -1,0 +1,125 @@
+/* -------Cpmpamies Section------ */
+
+@media screen and (max-width: $mobile) {
+  .companies__title {
+    margin-bottom: 30px;
+  }
+
+  .companies__list {
+    max-width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px 30px;
+  }
+
+  .companies__item {
+    width: calc((100% - 30px) / 2);
+  }
+
+  .companies__link {
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    color: var(--icon-color);
+    border: 1px solid var(--icon-color);
+    outline: transparent;
+    transition-property: color, border-color;
+    transition-duration: var(--transition-dir);
+    transition-timing-function: var(--transition-time-func);
+    transition-delay: 0s;
+  }
+
+  .companies__icon {
+    fill: currentColor;
+  }
+
+  .companies__link:hover,
+  .companies__link:focus {
+    color: var(--btn-color);
+    border-color: var(--btn-color);
+  }
+}
+
+@media screen and (min-width: $tablet) and (max-width: $desktop) {
+  .companies__title {
+    margin-bottom: 30px;
+  }
+
+  .companies__list {
+    width: 738px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px 30px;
+  }
+  .companies__item {
+    width: calc((100% - 60px) / 3);
+  }
+
+  .companies__link {
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    color: var(--icon-color);
+    border: 1px solid var(--icon-color);
+    outline: transparent;
+    transition-property: color, border-color;
+    transition-duration: var(--transition-dir);
+    transition-timing-function: var(--transition-time-func);
+    transition-delay: 0s;
+  }
+
+  .companies__icon {
+    fill: currentColor;
+  }
+
+  .companies__link:hover,
+  .companies__link:focus {
+    color: var(--btn-color);
+    border-color: var(--btn-color);
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .companies__title {
+    margin-bottom: 50px;
+  }
+
+  .companies__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 16px;
+  }
+
+  .companies__link {
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    color: var(--icon-color);
+    border: 1px solid var(--icon-color);
+    outline: transparent;
+    transition-property: color, border-color;
+    transition-duration: var(--transition-dir);
+    transition-timing-function: var(--transition-time-func);
+    transition-delay: 0s;
+  }
+
+  .companies__icon {
+    fill: currentColor;
+  }
+
+  .companies__link:hover,
+  .companies__link:focus {
+    color: var(--btn-color);
+    border-color: var(--btn-color);
+  }
+}

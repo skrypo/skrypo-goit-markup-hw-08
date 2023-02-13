@@ -1,0 +1,134 @@
+* {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  background-color: var(--bgrnd-color);
+  font-family: "roboto", sans-serif;
+  color: var(--main-txt-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+textarea {
+  width: 100%;
+  display: block;
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  background-color: var(--btn-color);
+  color: var(--bgrnd-color);
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition-property: background-color;
+  transition-duration: var(--transition-dir);
+  transition-timing-function: var(--transition-time-func);
+  transition-delay: 0s;
+}
+
+.container {
+  @media screen and (max-width: $mobile) {
+    max-width: 480px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: $tablet) {
+    max-width: 768px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+}
+
+.section {
+  @media screen and (max-width: $mobile) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: $tablet) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.section-title {
+  @media screen and (max-width: $mobile) {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: calc(33 / 28);
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--title-txt-color);
+  }
+  @media screen and (min-width: $tablet) {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: calc(33 / 28);
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--title-txt-color);
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--title-txt-color);
+  }
+}
+
+.icons-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}

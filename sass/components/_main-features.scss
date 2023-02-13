@@ -1,0 +1,125 @@
+/* -------Features Section------ */
+
+@media screen and (max-width: $mobile) {
+  // .features__list {
+  //   margin: 0 auto;
+  // }
+
+  .features__icons-wrapper {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: var(--bgrnd-team);
+    margin-bottom: 30px;
+  }
+
+  .features__list {
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .features__item {
+    margin-bottom: 30px;
+  }
+
+  .features__item:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .features__title {
+    font-family: var(--main-font);
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--title-txt-color);
+  }
+
+  .features__desc {
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px 30px;
+  }
+
+  .features__icons-wrapper {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: var(--bgrnd-team);
+    margin-bottom: 30px;
+  }
+
+  .features__item {
+    width: 354px;
+  }
+
+  .features__title {
+    font-family: var(--main-font);
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: var(--title-txt-color);
+  }
+
+  .features__desc {
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .features__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .features__icons-wrapper {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: var(--bgrnd-team);
+    margin-bottom: 30px;
+  }
+
+  .features__item {
+    width: 270px;
+  }
+
+  .features__title {
+    font-family: var(--main-font);
+    margin-bottom: 9px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    color: var(--title-txt-color);
+  }
+
+  .features__desc {
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
+}

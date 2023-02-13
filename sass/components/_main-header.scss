@@ -1,0 +1,126 @@
+/* -------Header------ */
+
+@media screen and (max-width: $mobile) {
+  .header {
+    border-bottom: 1px solid var(--border-color-secondary);
+    .logo {
+      font-family: "raleway";
+      font-weight: 700;
+      color: var(--btn-color);
+      font-size: 26px;
+      letter-spacing: 0.03em;
+      text-decoration: none;
+      &__hdsecond {
+        color: var(--additional-color-logo);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .header {
+    border-bottom: 1px solid var(--border-color-secondary);
+    &__container {
+      display: flex;
+      justify-content: space-between;
+
+      align-items: center;
+    }
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    &__list {
+      display: flex;
+    }
+    &__item:first-child {
+      margin-right: 50px;
+    }
+    &__item:nth-child(2) {
+      margin-right: 50px;
+    }
+    &__link {
+      display: block;
+      font-weight: 500;
+      font-size: 14px;
+      color: var(--title-txt-color);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      transition-property: color;
+      transition-duration: var(--transition-dir);
+      transition-timing-function: var(--transition-time-func);
+      transition-delay: 0s;
+      position: relative;
+    }
+  }
+
+  .logo {
+    font-family: "raleway";
+    font-weight: 700;
+    color: var(--btn-color);
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    &__hdsecond {
+      color: var(--additional-color-logo);
+    }
+  }
+
+  .header-logo {
+    display: block;
+    margin-right: 97px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .nav__link:hover,
+  .tel-footer:hover,
+  .email-footer:hover {
+    color: var(--btn-color);
+  }
+
+  .current::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: -1px;
+    background-color: var(--btn-color);
+  }
+
+  .addresses {
+    display: flex;
+    justify-content: flex-end;
+
+    &__link {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      color: var(--main-txt-color);
+      font-weight: 500;
+      font-size: 14px;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition-property: color;
+      transition-duration: var(--transition-dir);
+      transition-timing-function: var(--transition-time-func);
+      transition-delay: 0s;
+    }
+    &__link:hover,
+    &__link:focus {
+      color: var(--btn-color);
+    }
+    &__icon {
+      fill: currentColor;
+    }
+    &__link--tel {
+      margin-left: 30px;
+    }
+  }
+}

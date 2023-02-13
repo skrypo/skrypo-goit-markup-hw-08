@@ -1,0 +1,52 @@
+/* -------Gallery Section------ */
+@media screen and (max-width: $mobile) {
+  .gallery {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $tablet) and (max-width: $desktop) {
+  .gallery {
+    display: none;
+  }
+}
+
+.gallery {
+  padding-top: 0px;
+  &__wrapper {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    position: relative;
+  }
+  &__img {
+    display: block;
+  }
+  &__desc {
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__desc-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--bgrnd-color);
+  }
+}

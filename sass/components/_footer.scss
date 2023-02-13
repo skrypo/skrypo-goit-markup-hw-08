@@ -15,6 +15,17 @@
       display: block;
       text-align: center;
     }
+    .logo {
+      font-family: "raleway";
+      font-weight: 700;
+      color: var(--btn-color);
+      font-size: 26px;
+      letter-spacing: 0.03em;
+      text-decoration: none;
+      &__ftsecond {
+        color: var(--bgrnd-color);
+      }
+    }
     &-title {
       font-weight: 700;
       font-size: 14px;
@@ -168,6 +179,17 @@
       justify-content: space-around;
       gap: 60px 0px;
     }
+    .logo {
+      font-family: "raleway";
+      font-weight: 700;
+      color: var(--btn-color);
+      font-size: 26px;
+      letter-spacing: 0.03em;
+      text-decoration: none;
+      &__ftsecond {
+        color: var(--bgrnd-color);
+      }
+    }
     &__logo {
       margin-bottom: 20px;
       display: block;
@@ -320,6 +342,17 @@
       display: flex;
       gap: 70px;
       align-items: baseline;
+    }
+    .logo {
+      font-family: "raleway";
+      font-weight: 700;
+      color: var(--btn-color);
+      font-size: 26px;
+      letter-spacing: 0.03em;
+      text-decoration: none;
+      &__ftsecond {
+        color: var(--bgrnd-color);
+      }
     }
     &__logo {
       margin-bottom: 9px;

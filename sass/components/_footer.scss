@@ -6,13 +6,10 @@
     padding: 60px 0px;
     &__contacts {
       width: 231px;
+      margin: 0 auto;
+      margin-bottom: 60px;
     }
-    &__wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 60px;
-    }
+
     &__logo {
       margin-bottom: 20px;
       display: block;
@@ -41,11 +38,11 @@
     &-contact-wrapper {
       max-width: 450px;
     }
-    &-contact {
-      width: 450px;
-    }
     &-title-subscribe {
       margin-bottom: 20px;
+    }
+    &-social-wrapper {
+      margin-bottom: 60px;
     }
   }
 
@@ -83,6 +80,7 @@
   .label-footer-contact {
     width: 100%;
     max-width: 450px;
+    padding: 0 15px;
   }
   .input-footer-contact {
     display: inline-block;

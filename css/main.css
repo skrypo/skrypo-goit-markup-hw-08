@@ -67,9 +67,12 @@ textarea {
 
 @media screen and (max-width: 767px) {
   .container {
+    min-width: 320px;
     max-width: 480px;
-    padding: 0 15px;
-    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1492,12 +1495,8 @@ textarea {
   }
   .footer__contacts {
     width: 231px;
-  }
-  .footer__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 60px;
+    margin: 0 auto;
+    margin-bottom: 60px;
   }
   .footer__logo {
     margin-bottom: 20px;
@@ -1525,11 +1524,11 @@ textarea {
   .footer-contact-wrapper {
     max-width: 450px;
   }
-  .footer-contact {
-    width: 450px;
-  }
   .footer-title-subscribe {
     margin-bottom: 20px;
+  }
+  .footer-social-wrapper {
+    margin-bottom: 60px;
   }
   .logo__ftsecond {
     color: var(--bgrnd-color);
@@ -1561,6 +1560,7 @@ textarea {
   .label-footer-contact {
     width: 100%;
     max-width: 450px;
+    padding: 0 15px;
   }
   .input-footer-contact {
     display: inline-block;

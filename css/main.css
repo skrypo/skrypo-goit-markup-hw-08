@@ -293,6 +293,7 @@ textarea {
   }
   .social-mob {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 64px;
   }
   .social-mob__item {
@@ -1311,7 +1312,6 @@ textarea {
   }
   .features__list {
     margin: 0 auto;
-    padding: 0 15px;
   }
   .features__item {
     margin-bottom: 30px;
@@ -1458,7 +1458,6 @@ textarea {
 @media screen and (max-width: 767px) {
   .team {
     background-color: var(--bgrnd-team);
-    width: 100%;
   }
   .team__title {
     margin-bottom: 30px;
@@ -1669,10 +1668,8 @@ textarea {
     margin-bottom: 30px;
   }
   .companies__list {
-    max-width: 450px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: 30px 30px;
   }
   .companies__item {
@@ -2186,7 +2183,6 @@ textarea {
     transition-property: background-color;
     transition-duration: var(--transition-dir);
     transition-timing-function: var(--transition-time-func);
-    transition-delay: 0s;
     padding: 10px 28px;
     min-width: 200px;
     align-content: center;
@@ -2373,8 +2369,6 @@ textarea {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
   .hover-container {
-    max-width: 450px;
-    height: 294px;
     position: relative;
   }
   .card-desc {

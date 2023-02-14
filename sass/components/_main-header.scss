@@ -106,7 +106,10 @@
     text-decoration: none;
   }
   .nav-mob__link:hover {
-    color: #2196f3;
+    color: var(--btn-color);
+  }
+  .nav-mob__link.current {
+    color: var(--btn-color);
   }
   .addresses-mob__item:first-of-type {
     margin-bottom: 32px;
@@ -140,6 +143,7 @@
   .social-mob {
     display: flex;
     flex-wrap: wrap;
+    gap: 5px;
     margin-top: 64px;
   }
 
@@ -150,18 +154,17 @@
     font-size: 18px;
     line-height: calc(22 / 18);
     letter-spacing: 0.02em;
-    padding: 0 10px;
-    padding: 0 10px;
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
     color: var(--btn-color);
   }
-  .social-mob__item:last-of-type {
+
+  .social-mob__link {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 5px;
+  }
+
+  .social-mob__link--border {
     padding-right: 0px;
     border-right: none;
-  }
-  .social-mob__item:first-of-type {
-    padding-left: 0px;
-    border-left: none;
   }
 }
 
@@ -239,6 +242,10 @@
     .nav__link:hover,
     .tel-footer:hover,
     .email-footer:hover {
+      color: var(--btn-color);
+    }
+
+    .nav__link.current {
       color: var(--btn-color);
     }
 

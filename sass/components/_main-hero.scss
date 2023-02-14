@@ -8,11 +8,22 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/bg-img.jpg");
+      url("../images/hero-bg/mob-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding-top: 118px;
     padding-bottom: 118px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/hero-bg/mob-bg@2x.jpg");
+    }
 
     &__cta {
       max-width: 360px;
@@ -62,9 +73,19 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/bg-img.jpg");
+      url("../images/hero-bg/tab-bg.jpg");
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/hero-bg/tab-bg@2x.jpg");
+    }
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding-top: 118px;
     padding-bottom: 118px;
 
@@ -116,9 +137,19 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/bg-img.jpg");
+      url("../images/hero-bg/desktop-bg.jpg");
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/hero-bg/desktop-bg@2x.jpg");
+    }
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding-top: 200px;
     padding-bottom: 200px;
 
